@@ -1,0 +1,57 @@
+/* 顶部主导航栏 */
+.topbar .main-nav {
+  height: 70px;
+  border: 1px solid #000;
+  background-color: #242424;
+  color: #ccc;
+}
+
+/* 顶部主导航栏 --- 左侧*/
+.topbar .main-nav .left {
+  display: flex;
+}
+
+.topbar .main-nav .left .title {
+  width: 177px;
+  height: 69px;
+  text-indent: -999px;
+}
+
+.topbar .main-nav .left .nav-list {
+  display: flex;
+}
+
+.topbar .main-nav .left .nav-list .item {
+  position: relative;
+}
+
+.topbar .main-nav .left .nav-list .item a {
+  display: block;
+  padding: 0 19px;
+  line-height: 69px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.topbar .main-nav .left .nav-list .item.active a {
+  background-color: #000;
+  color: #fff;
+}
+
+.topbar .main-nav .left .nav-list .item .cor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 7px;
+  margin: 0 auto;
+  background-position: -216px -140px;
+}
+
+.topbar .main-nav .left .nav-list .item .hot {
+  display: block;
+  width: 28px;
+  height: 19px;
+  background-position: -192px 0;
+}

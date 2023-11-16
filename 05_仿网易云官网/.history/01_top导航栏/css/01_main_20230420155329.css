@@ -1,0 +1,16 @@
+/* 顶部主导航栏 */
+.topbar .main-nav {
+  height: 70px;
+  background-color: #242424;
+  color: #ccc;
+}
+
+/* 顶部主导航栏 --- 左侧*/
+.topbar .main-nav .left {
+  display: flex;
+}
+
+.topbar .main-nav .left .title {
+  width: 177px;
+  height: 69px;
+}

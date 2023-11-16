@@ -1,0 +1,143 @@
+/* 内容包装 ----------------------------------------------------------*/
+/* 顶部导航栏展示区域 */
+.wrapper_01 {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* 轮播图展示区域,内容展示区域 */
+.wrapper_02 {
+  width: 982px;
+  margin: 0 auto;
+}
+
+
+/* 浮动 -------------------------------------------*/
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 清除浮动 */
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear_fix {
+  *zoom: 1;
+}
+
+/* 精灵图_01 -------------------------------------------------------*/
+.sprite_topbar_01 {
+  background: url("../images/topbar_sprite.png") no-repeat 0 0;
+}
+
+.hot_icon {
+  display: inline-block;
+  width: 28px;
+  height: 19px;
+  background: url("../images/topbar_sprite.png") no-repeat -192px 0;
+}
+
+/* 标题模板样式------------------------------------- */
+/* 内容展示区域，右侧 入驻歌手、热门主播*/
+.header_type_01 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.header_type_01 .title {
+  font-size: 12px;
+}
+
+.header_type_01 .more {
+  color: #666;
+}
+
+.header_type_01 .more:hover {
+  text-decoration: underline;
+}
+
+.header_type_02 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 35px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #C10D0C;
+  line-height: 28px;
+}
+
+.header_type_02 .category {
+  display: flex;
+  align-items: center;
+}
+
+.header_type_02 .category::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 28px;
+  background: url("../images/main_sprite.png") -225px -156px;
+}
+
+.header_type_02 .category .title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header_type_02 .category .list {
+  display: flex;
+  margin-left: 20px;
+}
+
+.header_type_02 .category .list .keyword a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+
+.header_type_02 .category .list .line {
+  padding: 0 12px;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.header_type_02 .more::after {
+  position: relative;
+  top: 5px;
+  left: 2px;
+  content: "arrow";
+  display: inline-block;
+  width: 12px;
+  height: 28px;
+  background: url("../images/main_sprite.png") 0 -240px;
+  text-indent: -9999px;
+}
+
+.header_type_02 .more a {
+  display: inline-block;
+  font-size: 12px;
+  color: #666;
+}
+
+.header_type_02 .more a:hover {
+  text-decoration: underline;
+}
+
+/* 单行文本溢出-省略号显示 */
+.ellipsis_01 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -1,0 +1,16 @@
+body {
+  padding-top: 200px;
+}
+
+.match {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match .area-left {
+  width: 872px;
+}
+
+.match .area-right {
+  width: 295px;
+}

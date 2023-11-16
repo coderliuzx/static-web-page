@@ -1,0 +1,22 @@
+body {
+  padding-top: 100px;
+}
+
+.mainItem {
+  display: flex;
+  justify-content: space-between;
+  height: 549px;
+  background: skyblue;
+}
+
+.mainItem .area-left {
+  width: 872px;
+  height: 549px;
+  background: orange;
+}
+
+.mainItem .area-right {
+  width: 295px;
+  height: 528px;
+  background: purple;
+}

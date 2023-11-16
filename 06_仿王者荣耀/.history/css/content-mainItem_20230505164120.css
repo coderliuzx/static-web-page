@@ -1,0 +1,82 @@
+body {
+  padding-top: 100px;
+}
+
+.mainItem {
+  display: flex;
+  justify-content: space-between;
+  height: 549px;
+}
+
+/* 左边区域------------------------------------------------------- */
+.mainItem .area-left {
+  width: 872px;
+  height: 549px;
+}
+
+/* 标题微调 */
+.mainItem .area-left .item_header {
+  margin-bottom: 16px;
+}
+
+.mainItem .area-left .item_header .title {
+  background-position: 0 -106px;
+}
+
+/* 主标题列表微调 */
+.mainItem .area-left .itemShow .main_titleList {
+  margin-bottom: 5px;
+}
+
+/* 子标题列表微调 */
+.mainItem .area-left .itemShow .itemArea .sub_titleList {
+  padding: 0 0 7px 7px;
+}
+
+/* 视频列表 */
+.mainItem .area-left .itemShow .itemArea .videoList {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 380px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item {
+  width: 209px;
+  background: orange;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a {
+  display: block;
+  height: 175px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .album {
+  position: relative;
+  height: 125px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .album img {
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右边区域------------------------------------------------------- */
+.mainItem .area-right {
+  width: 295px;
+  height: 528px;
+  background: purple;
+}

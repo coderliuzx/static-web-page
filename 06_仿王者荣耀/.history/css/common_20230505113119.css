@@ -1,0 +1,25 @@
+.wrapper_01 {
+  width: 990px;
+  margin: 0 auto;
+}
+
+.wrapper_02 {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.wrapper_03 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 字体颜色 */
+.fc_01 {
+  color: #c9c9dd;
+}
+
+/* body样式继承 */
+body {
+  color: #333;
+  font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+}

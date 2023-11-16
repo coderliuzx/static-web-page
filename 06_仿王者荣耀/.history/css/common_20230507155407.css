@@ -1,0 +1,324 @@
+.wrapper_01 {
+  width: 990px;
+  margin: 0 auto;
+}
+
+.wrapper_02 {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.wrapper_03 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 字体颜色 */
+.fc_01 {
+  color: #c9c9dd;
+}
+
+/* 标题封装01---内容中心&英雄/皮肤 */
+.item_header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 26px;
+  line-height: 25px;
+}
+
+.item_header .title {
+  padding-left: 33px;
+  color: #323235;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: url("../img/main_sprite.png") no-repeat 0 9999px;
+}
+
+.item_header .more {
+  padding-left: 22px;
+  color: #999;
+  background: url("../img/main_sprite.png") no-repeat -252px 6px;
+}
+
+.item_header .more:hover {
+  color: #f3c258;
+}
+
+/* 主级标题列表封装 */
+.main_titleList {
+  display: flex;
+  height: 32px;
+  line-height: 29px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.main_titleList .titleItem {
+  flex-grow: 1;
+}
+
+.main_titleList .titleItem a {
+  display: block;
+  height: 100%;
+  border-bottom: 3px solid #f5f5f5;
+  color: #999;
+}
+
+.main_titleList .titleItem a:hover,
+.main_titleList .titleItem a.active {
+  color: #333333;
+  border-color: #f3c258;
+}
+
+.main_titleList .split {
+  width: 1px;
+  height: 20px;
+  margin-top: 5px;
+  background: #e1e1e1;
+}
+
+/* 子级标题列表封装 */
+.sub_titleList {
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
+.sub_titleList .titleItem {
+  margin: 0 15px 0 0;
+}
+
+.sub_titleList .titleItem a {
+  display: block;
+  height: 26px;
+  padding: 0 13px 0 13px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  color: #333;
+  line-height: 24px;
+  background: #f5f5f5;
+}
+
+.sub_titleList .titleItem a:hover,
+.sub_titleList .titleItem a.active {
+  color: #fff;
+  background: #f3c258;
+  border-color: #f3c258;
+}
+
+/* 高校联赛图标 */
+.icon_match_01 {
+  display: inline-block;
+  height: 23px;
+  padding: 0 4px;
+  border-radius: 10px;
+  line-height: 23px;
+  font-size: 12px;
+  color: #999;
+  background: #e3e3e3;
+}
+
+
+
+/* 视频列表 */
+.video_list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 380px;
+}
+
+.video_list .item {
+  width: 209px;
+}
+
+.video_list .item a {
+  display: block;
+  height: 175px;
+}
+
+.video_list .item a .album {
+  position: relative;
+  height: 125px;
+}
+
+.video_list .item a .album img {
+  width: 100%;
+  height: 125px;
+}
+
+.video_list .item a .album .albumInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  padding-left: 24px;
+  line-height: 22px;
+  color: #fff;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6) url("../img/main_sprite.png") no-repeat -248px -59px;
+}
+
+.video_list .item a .album .mask {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity .4s ease-in-out;
+}
+
+.video_list .item a:hover .album .mask {
+  opacity: 1;
+}
+
+.video_list .item a .album .mask .icon-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background: url("../img/main_sprite.png") no-repeat -192px -64px;
+}
+
+.video_list .item a .desc {
+  margin-top: 10px;
+}
+
+
+/* 排行榜列表 */
+.list_ranking {
+  width: 200px;
+}
+
+.list_ranking .title {
+  position: relative;
+  line-height: 40px;
+}
+
+.list_ranking .title a {
+  display: block;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700 !important;
+}
+
+.list_ranking .title::after {
+  content: ">";
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  color: #ccc;
+  font-size: 16px;
+  transform: scaleY(1.3);
+}
+
+/* .list_ranking .list .item {
+  padding-bottom: 24px;
+} */
+
+.list_ranking .list .item .info {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.list_ranking .list .item .info .name {
+  height: 16px;
+  padding-left: 22px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.list_ranking .list .item .info:hover .name,
+.list_ranking .list .item.active .info .name {
+  display: none;
+}
+
+.list_ranking .list .item .info .num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 25;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  color: #fff;
+  background: #c62828;
+}
+
+.list_ranking .list .item .info em.num {
+  background-color: #ccc;
+}
+
+.list_ranking .list .item .info .desc {
+  display: none;
+  position: relative;
+  z-index: 24;
+  height: 90px;
+}
+
+.list_ranking .list .item .info:hover .desc,
+.list_ranking .list .item.active .info .desc {
+  display: block;
+}
+
+.list_ranking .list .item .info .desc img {
+  width: 100%;
+  height: 100%;
+}
+
+.list_ranking .list .item .info .desc .cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 28px;
+  padding: 0 15px;
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.list_ranking .list .item .info .desc .cover span:hover {
+  color: #f3c258;
+}
+
+
+/* 下拉菜单的小图标 */
+.icon_dropMenu {
+  vertical-align: middle;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/main_sprite.png") no-repeat 0 9999px;
+}
+
+.icon_dropMenu.hot {
+  background-position: -163px -68px;
+}
+
+.icon_dropMenu.fans {
+  background-position: -137px -68px;
+}
+
+.icon_dropMenu.guard {
+  background-position: -136px -5px;
+}

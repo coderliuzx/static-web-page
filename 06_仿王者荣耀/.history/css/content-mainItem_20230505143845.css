@@ -1,0 +1,39 @@
+body {
+  padding-top: 100px;
+}
+
+.mainItem {
+  display: flex;
+  justify-content: space-between;
+  height: 549px;
+}
+
+/* 左边区域------------------------------------------------------- */
+.mainItem .area-left {
+  width: 872px;
+  height: 549px;
+}
+
+.mainItem .area-left .item-header {
+  display: flex;
+  justify-content: space-between;
+  height: 26px;
+  margin-bottom: 16px;
+  line-height: 26px;
+}
+
+.mainItem .area-left .item-header h3 {
+  padding: 0 10px 0 33px;
+  color: #323235;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: url("../img/main_sprite.png") no-repeat 0 -106px;
+}
+
+/* 右边区域------------------------------------------------------- */
+.mainItem .area-right {
+  width: 295px;
+  height: 528px;
+  background: purple;
+}

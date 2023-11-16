@@ -1,0 +1,102 @@
+.wrapper_01 {
+  width: 990px;
+  margin: 0 auto;
+}
+
+.wrapper_02 {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.wrapper_03 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 字体颜色 */
+.fc_01 {
+  color: #c9c9dd;
+}
+
+/* 标题封装01---内容中心&英雄/皮肤 */
+.item_header {
+  display: flex;
+  justify-content: space-between;
+  height: 26px;
+  line-height: 25px;
+}
+
+.item_header .title {
+  padding-left: 33px;
+  color: #323235;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: url("../img/main_sprite.png") no-repeat 0 9999px;
+}
+
+.item_header .more {
+  padding-left: 22px;
+  color: #999;
+  background: url("../img/main_sprite.png") no-repeat -252px 6px;
+}
+
+.item_header .more:hover {
+  color: #f3c258;
+}
+
+/* 主级标题列表封装 */
+.main_titleList {
+  display: flex;
+  height: 32px;
+  line-height: 29px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.main_titleList .titleItem {
+  flex: 1;
+}
+
+.main_titleList .titleItem a {
+  display: block;
+  height: 100%;
+  border-bottom: 3px solid #f5f5f5;
+  color: #999;
+}
+
+.main_titleList .titleItem a:hover,
+.main_titleList .titleItem a.active {
+  color: #333333;
+  border-color: #f3c258;
+}
+
+.main_titleList .split {
+  width: 1px;
+  height: 20px;
+  margin-top: 5px;
+  background: #e1e1e1;
+}
+
+/* 子级标题列表封装 */
+.sub_titleList {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 0 0 7px 7px;
+}
+
+.sub_titleList .titleItem {
+  margin: 0 8px 0 0;
+}
+
+.sub_titleList .titleItem a {
+  display: block;
+  height: 26px;
+  padding: 0 13px 0 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  color: #333;
+  line-height: 24px;
+  background: #f5f5f5;
+}

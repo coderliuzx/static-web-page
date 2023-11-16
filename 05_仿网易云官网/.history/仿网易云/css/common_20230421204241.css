@@ -1,0 +1,50 @@
+/* 内容包装 */
+.wrapper_01 {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper_02 {
+  width: 982px;
+  margin: 0 auto;
+}
+
+/* 内容展示区域 */
+.wrapper_03 {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* 浮动 */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 清除浮动 */
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear_fix {
+  *zoom: 1;
+}
+
+/* 精灵图_01 */
+.sprite_topbar_01 {
+  background: url("../images/topbar_sprite.png") no-repeat 0 0;
+}
+
+.hot_icon {
+  display: inline-block;
+  width: 28px;
+  height: 19px;
+  background: url("../images/topbar_sprite.png") no-repeat -192px 0;
+}

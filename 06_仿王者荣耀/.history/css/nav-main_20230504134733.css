@@ -1,0 +1,62 @@
+body {
+  width: 100%;
+  height: 1300px;
+  background: url("../img/datu.jpg") no-repeat top center/ 100% auto;
+}
+
+.nav-main {
+  height: 84px;
+  font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-main .area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 230px;
+}
+
+.nav-main .area .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 200px;
+  height: 54px;
+  background: url(..//img/logo.png) no-repeat 0 0;
+}
+
+.nav-main .area .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+}
+
+.nav-main .area-left .item {
+  width: 115px;
+  height: 84px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.nav-main .area-left .item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.nav-main .area-left .item em {
+  display: block;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #858792;
+}

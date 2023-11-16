@@ -1,0 +1,96 @@
+/**
+ ************************ 网站的标签与公共初始化样式 *********************************************
+**/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #ffffff;
+	color: #535353;
+	font: 14px 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', "\5B8B\4F53", sans-serif;
+}
+em,
+i {
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0;
+	vertical-align: top;
+}
+button {
+	cursor: pointer;
+}
+a {
+	color: #666666;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff0036;
+	text-decoration: underline;
+}
+a:active {
+	color: #e15b5b;
+}
+
+.hide,
+.none {
+	display: none;
+}
+/* 伪元素清除浮动 */
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear_b {
+	clear: both;
+}
+/* 左右浮动 */
+.float_l {
+	float: left;
+}
+.float_r {
+	float: right;
+}
+/* 字体图标定义 */
+@font-face {
+	font-family: 'icon_font';
+	src:  url('../fonts/icomoon.eot?tomleg');
+	src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+	  url('../fonts/icomoon.woff?tomleg') format('woff'),
+	  url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+@font-face {
+	font-family: "candy_font";
+	src: url(../fonts/ruanTangMengMengDa.ttf);
+}
+@font-face {
+	font-family: "kaiti";
+	src: url(../fonts/kaiTI.ttf);
+}
+span[class$="icon"],
+p[class$="icon"] {
+	font-family: 'icon_font';
+  }
+
+  /* 页面版心宽度 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.red {
+    color: #ff0036;
+}

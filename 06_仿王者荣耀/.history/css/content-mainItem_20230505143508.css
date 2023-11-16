@@ -1,0 +1,32 @@
+body {
+  padding-top: 100px;
+}
+
+.mainItem {
+  display: flex;
+  justify-content: space-between;
+  height: 549px;
+  background: skyblue;
+}
+
+/* 左边区域------------------------------------------------------- */
+.mainItem .area-left {
+  width: 872px;
+  height: 549px;
+  background: orange;
+}
+
+.mainItem .area-left .item-header {
+  display: flex;
+  justify-content: space-between;
+  height: 26px;
+  margin-bottom: 16px;
+  line-height: 26px;
+}
+
+/* 右边区域------------------------------------------------------- */
+.mainItem .area-right {
+  width: 295px;
+  height: 528px;
+  background: purple;
+}

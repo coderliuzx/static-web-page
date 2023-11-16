@@ -1,0 +1,8 @@
+body {
+  padding-top: 200px;
+}
+
+.match {
+  display: flex;
+  justify-content: space-between;
+}

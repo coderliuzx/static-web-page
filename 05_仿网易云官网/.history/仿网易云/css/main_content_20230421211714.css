@@ -1,0 +1,12 @@
+.content .area {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+}
+
+.content .area-left {
+  width: 729px;
+  height: 300px;
+}

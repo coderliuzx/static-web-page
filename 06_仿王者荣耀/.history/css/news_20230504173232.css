@@ -1,0 +1,105 @@
+.news {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 342px;
+}
+
+.news>div {
+  flex-shrink: 0;
+}
+
+
+/* banner图展示列表 */
+.news .banner {
+  width: 605px;
+  background: #000;
+}
+
+.news .banner .bannerList {
+  display: flex;
+  height: 298px;
+  margin-right: 1px;
+  overflow: hidden;
+}
+
+.news .banner .bannerList .item {
+  flex-shrink: 0;
+}
+
+.news .banner .bannerList .item a {
+  display: block;
+  height: 298px;
+}
+
+.news .banner .bannerList .item img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+.news .banner .descList {
+  display: flex;
+  height: 44px;
+  margin-right: 1px;
+}
+
+.news .banner .descList .item {
+  flex-shrink: 0;
+}
+
+.news .banner .descList .item a {
+  display: block;
+  width: 121px;
+  height: 100%;
+  text-align: center;
+  line-height: 44px;
+  color: #b1b2be;
+}
+
+.news .banner .descList .item a:hover,
+.news .banner .descList .item a.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #f3c258;
+}
+
+
+
+
+/* 新闻展示列表 */
+.news .newsList {
+  width: 359px;
+  padding: 0 17px;
+  background-color: yellow;
+}
+
+.news .newsList .newsTitle {
+  display: flex;
+  width: 100%;
+  height: 49px;
+  border-bottom: 1px solid #000;
+}
+
+.news .newsList .newsTitle .item {
+  flex-shrink: 0;
+}
+
+
+
+
+/* 其他展示 */
+.news .other {
+  width: 236px;
+  background-color: green;
+}
+
+.news .tips {
+  position: absolute;
+  top: 0;
+  right: -58px;
+  width: 53px;
+  background-color: purple;
+}

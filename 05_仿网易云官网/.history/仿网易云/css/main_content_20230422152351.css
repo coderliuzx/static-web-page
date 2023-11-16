@@ -1,0 +1,81 @@
+.content .area {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+  background: url("../images/main_bg.png") 0 0;
+}
+
+.content .area-left {
+  width: 729px;
+}
+
+.content .area-right {
+  width: 250px;
+}
+
+/* 右侧-登录 */
+.content .area-right .login {
+  width: 100%;
+  height: 126px;
+  background: url("../images/main_sprite.png") 0 0;
+}
+
+.content .area-right .login .desc {
+  width: 205px;
+  padding: 16px 0;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.content .area-right .login a {
+  display: block;
+  width: 100px;
+  height: 31px;
+  margin: 0 auto;
+  background: url("../images/main_sprite.png") 0 -195px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 31px;
+}
+
+.content .area-right .login a:hover {
+  background-position: -110px -195px;
+}
+
+/* 右侧-入驻歌手 */
+.content .area-right .settle-singer {
+  padding: 20px 20px 0;
+}
+
+.content .area-right .settle-singer .singer-list {
+  margin-top: 6px;
+}
+
+.content .area-right .settle-singer .singer-list .item {
+  display: flex;
+  width: 100%;
+  height: 62px;
+}
+
+.content .area-right .settle-singer .singer-list .item .album {
+  width: 62px;
+  height: 62px;
+}
+
+.content .area-right .settle-singer .singer-list .item .album img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .area-right .settle-singer .singer-list .item .info {
+  background-blend-mode: ;
+}
+
+/* 右侧-热门主播 */
+.content .area-right .hot-author {
+  padding: 20px 20px 0;
+  margin-top: 30px;
+}

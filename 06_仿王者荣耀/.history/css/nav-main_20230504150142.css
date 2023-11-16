@@ -1,0 +1,107 @@
+body {
+  width: 100%;
+  height: 1300px;
+  background: url("../img/datu.jpg") no-repeat top center/ 100% auto;
+}
+
+.nav-main {
+  font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-main .area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 84px;
+  padding-left: 230px;
+}
+
+.nav-main .area .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 200px;
+  height: 54px;
+  background: url(..//img/logo.png) no-repeat 0 0;
+}
+
+.nav-main .area .logo a {
+  display: block;
+  height: 100%;
+  text-indent: -9999px;
+}
+
+.nav-main .area-left {
+  display: flex;
+}
+
+.nav-main .area-left .item {
+  width: 115px;
+  height: 84px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.nav-main .area-left .item:hover,
+.nav-main .area-left .item.active {
+  background: url("../img/main_sprite.png") no-repeat 0 0;
+}
+
+.nav-main .area-left .item:hover a,
+.nav-main .area-left .item.active a {
+  color: #e4b653;
+}
+
+.nav-main .area-left .item a {
+  display: block;
+  height: 100%;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.nav-main .area-left .item em {
+  display: block;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #858792;
+}
+
+.nav-main .area-right {
+  align-self: center;
+  display: flex;
+  width: 182px;
+}
+
+.nav-main .area-right .personal {
+  flex-shrink: 0;
+  width: 44px;
+  margin-right: 7px;
+}
+
+.nav-main .area-right .personal img {
+  height: 100%;
+  border: 1px solid #d9ad50;
+  border-radius: 23px;
+}
+
+.nav-main .area-right .login {
+  flex-shrink: 0;
+  width: 130px;
+}
+
+.nav-main .area-right .login a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.nav-main .area-right .login em {
+  display: block;
+  color: #858792;
+  font-size: 14px;
+}

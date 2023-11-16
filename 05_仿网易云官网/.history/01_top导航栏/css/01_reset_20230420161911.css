@@ -1,0 +1,26 @@
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+i {
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}

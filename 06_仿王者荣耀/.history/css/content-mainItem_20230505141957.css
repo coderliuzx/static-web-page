@@ -1,0 +1,10 @@
+body {
+  padding-top: 100px;
+}
+
+.mainList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainList .area-left {}

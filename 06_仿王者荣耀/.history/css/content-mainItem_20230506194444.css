@@ -1,0 +1,128 @@
+.mainItem {
+  display: flex;
+  justify-content: space-between;
+  height: 549px;
+}
+
+/* 左边区域------------------------------------------------------- */
+.mainItem .area-left {
+  width: 872px;
+  height: 549px;
+}
+
+/* 标题微调 */
+.mainItem .area-left .item_header {
+  margin-bottom: 16px;
+}
+
+.mainItem .area-left .item_header .title {
+  background-position: 0 -106px;
+}
+
+/* 主标题列表微调 */
+.mainItem .area-left .itemShow .main_titleList {
+  margin-bottom: 5px;
+}
+
+/* 子标题列表微调 */
+.mainItem .area-left .itemShow .itemArea .sub_titleList {
+  padding: 0 0 7px 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右边区域------------------------------------------------------- */
+.mainItem .area-right {
+  width: 295px;
+  height: 528px;
+}
+
+/* 标题微调 */
+.mainItem .area-right .item_header {
+  margin-bottom: 16px;
+}
+
+.mainItem .area-right .item_header h3 {
+  background-position: 0 -144px;
+}
+
+/* 主标题列表微调 */
+.mainItem .area-right .main_titleList {
+  margin-bottom: 19px;
+}
+
+/* item内容展示区 */
+.mainItem .area-right .item-content .top-album {
+  height: 224px;
+  margin-bottom: 10px;
+}
+
+.mainItem .area-right .item-content .top-album img {
+  height: 156px;
+}
+
+.mainItem .area-right .item-content .top-album .desc {
+  height: 68px;
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+}
+
+.mainItem .area-right .item-content .top-album .desc .new {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.mainItem .area-right .item-content .top-album .desc .time {
+  color: #999999;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mainItem .area-right .item-content .hero-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainItem .area-right .item-content .hero-list .item a {
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 173px;
+}
+
+.mainItem .area-right .item-content .hero-list .item a img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainItem .area-right .item-content .hero-list .item a .mask {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .8);
+  color: #f3c258;
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: 68px;
+  letter-spacing: 4px;
+  transition: opacity .3s ease-in-out;
+}
+
+.mainItem .area-right .item-content .hero-list .item a:hover .mask {
+  opacity: 1;
+}

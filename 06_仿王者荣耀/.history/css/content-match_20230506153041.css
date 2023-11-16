@@ -1,0 +1,19 @@
+body {
+  padding-top: 200px;
+}
+
+.match {
+  display: flex;
+  justify-content: space-between;
+  /* 临时高度 */
+  height: 800px;
+
+}
+
+.match .area-left {
+  width: 872px;
+}
+
+.match .area-right {
+  width: 295px;
+}

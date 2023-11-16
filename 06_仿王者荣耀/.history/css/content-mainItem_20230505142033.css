@@ -1,0 +1,15 @@
+body {
+  padding-top: 100px;
+}
+
+.mainList {
+  display: flex;
+  justify-content: space-between;
+  background-color: skyblue;
+}
+
+.mainList .area-left {
+  width: 1200px;
+  height: 549px;
+  background: orange;
+}

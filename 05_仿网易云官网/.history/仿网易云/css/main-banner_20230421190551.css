@@ -1,0 +1,27 @@
+.banner {
+  height: 285px;
+  background: url("../images/banner_bg_02.jpeg") no-repeat center/6000px;
+}
+
+.banner .area {
+  position: relative;
+  display: flex;
+  height: 100%;
+  background-color: #e08484;
+}
+
+.banner .area-left {
+  width: 730px;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.banner .area-right {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  width: 254px;
+  flex-shrink: 0;
+  background-color: #0f0;
+}

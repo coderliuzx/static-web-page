@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px; padding:0px;
+}
+body {
+	background:url(../images/bgc5.png);
+}
+form {}
+table {
+	width:625px; height:440px;
+	margin:100px auto;
+	background:#e9edf6;
+}
+table {
+	border:1px solid #333;
+}
+
+/*账号框和密码框的样式*/
+.password,
+.user {
+	width:225px; height:24px;
+	border:1px solid #767676; border-radius:2px;
+}
+.password:focus,
+.user:focus {
+	border:2px solid #767676; box-shadow:0px 0px 3px 1px #3399FF inset;
+}
+
+/*登录和返回按钮的样式*/
+.login,
+.back {
+	width:120px; height:22px;
+	border:1px solid #bb4b4e; border-radius:2px;
+	background:#ebebeb;
+}
+.login:hover,
+.back:hover {
+	background:rgba(153,153,153,0.2);
+}
+.login:active,
+.back:active {
+	background:rgba(153,153,153,0.3);
+}
+
+.a_back {
+	display:inline-block;
+}
+
+/*无序列表里面的超链接样式*/
+table td ul a:link,
+table td ul a:visited {
+	color:rgba(0,51,255,0.8);
+}
+table td ul a:hover {
+	color:rgba(0,51,255,1);
+}
+table td ul a:active {
+	color:rgba(0,51,255,0.7);
+}
+

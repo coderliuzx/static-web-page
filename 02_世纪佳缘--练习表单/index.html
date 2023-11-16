@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta标签的http-equiv属性---成为HTTP响应头，当浏览器请求某个文件时首先会加载此响应头内的设置 -->
+		<meta http-equiv="refresh" content="10000; url=https://www.jiayuan.com/"/> <!-- 指定10秒种狗跳转至官方网站，指定时间值默认单位为秒不需要加时间单位---<meta http-equiv="refresh" content="5"> 若content属性值不加跳转url网址则只刷新，不跳转。
+		<!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> HTML5有<!DOCTYPE html>文档类型标签在开头处声明，可省略content="text/html"-->
+		<meta charset="utf-8" /> <!-- 这是HTML5对meta标签简化后的声明字符集格式-->
+		<!-- content多个属性值之间用;分号隔开，，如果对应的name属性值是keywords，多个关键字之间用英文状态下的逗号,隔开 -->
+		<!-- 为搜索引擎提供信息--网页内容关键字 -->
+		<meta name="keywords" content="交友,交友网,征婚交友,网上交友,征婚,征婚网,征婚交友网,交友中心,婚恋交友,同城交友,离异征婚,同城约会吧,约会吧征婚,约会吧交友,北京交友,上海交友,广州交友,深圳交友,重庆交友,沈阳交友,南京交友,找对象,婚介,二婚,再婚"/>
+		<!-- 为搜索引擎提供信息--网页的描述信息概括 -->
+		<meta name="description" content="世纪佳缘交友网：致力于打造国内领先的在线婚恋交友平台，数百万会员在这里找到对象。现2.2亿注册会员，让缘分千万里挑一！"/>
+		<!-- 为网页添加作者信息 -->
+		<meta name="author" content="development_department_lzx"/>
+		
+		<title>世纪佳缘交友网：国内领先的在线婚恋交友网站</title><!-- 网页标题 -->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/><!-- 链接外部css文件 -->
+	</head>
+	<body>
+		<!-- 登录注册 -->
+		<div class="login_box">
+			<!-- 登录注册头部 -->
+			<div class="login_header">
+				<div class="login_header_content">
+					<img class="login_img" src="img/logo_img.jpeg" ><!-- 世纪佳缘logo图片 -->
+					<img src="img/logo_txt.png" class="login_txt" ><!-- 婚恋网站logo文字 -->
+					<form action="xxx.php" method="post" name="form_login" class="form_login">
+						<input type="text" name="userID" class="userID" placeholder="邮箱/ID/手机号" /><!-- 账号输入 -->
+						<input type="password" name="userPassword" class="userPassword" placeholder="密码" /><!-- 密码输入 -->
+						<input type="button" name="userLogin" class="userLogin" value="登录" /><!-- 登录控件 -->
+					</form>
+					<div class="ortherLogin_box">
+						<span class="ortherLogin">其他登录</span>
+						<a href="#" target="_self" class="login_qq"></a><!-- qq登录-背景图片 -->
+						<a href="#" target="_self" class="login_microblog"></a><!-- 微博登录-背景图片 -->
+						<a href="#" target="_self" class="login_baidu"></a><!-- 百度登录-背景图片 -->
+						<a href="#" target="_self" class="login_wechat"></a><!-- 微信登录-背景图片 -->
+					</div>
+					<a href="#" target="_self" class="login_foreign">海外用户登录</a>
+					<a href="#" target="_self" class="forgetPassword">忘记密码</a>
+				</div>
+			</div>
+			<!-- 中间内容注册部分 -->
+			<div class="login_body">
+				<div class="login_body_contentBox">
+					<div class="login_body_content">
+						<!-- 中间内容注册部分的表单 -->
+						<form action="xxx.php" method="post" name="form_register" class="form_register"><!-- 表单嵌套表格 -->
+							<table border="0" cellspacing="0" cellpadding="0" class="table_register">
+								<thead>
+									<tr class="tr_title">
+										<th colspan="4">1分钟注册，享一辈子幸福！</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="td_right">性别</td>
+										<td>
+											<input type="radio" name="sex" id="man" />
+											<label for="man"><span class="bg_man">男</span></label><!-- 添加背景图片-男 -->
+										</td>
+										<td>
+											<input type="radio" name="sex" id="woman" />
+											<label for="woman"><span class="bg_woman">女</span></label><!-- 添加背景图片-女 -->
+										</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="td_right">生日</td>
+										<td>
+											<div class="birth_year">
+												<select name="year">
+													<option value="unselected">请选择</option>
+													<option value ="00后">00后</option>
+													<option value ="90后">90后</option>
+													<option value ="80后">80后</option>
+													<option value ="70后">70后</option>
+												</select>
+												<span>年</span>
+											</div>
+										</td>
+										<td>
+											<div class="birth_month">
+												<select name="month">
+													<option value="unselected">请选择</option>
+													<option value ="12月">12月</option>
+													<option value ="11月">11月</option>
+													<option value ="10月">10月</option>
+													<option value ="9月">9月</option>
+												</select>
+												<span>月</span>
+											</div>
+										</td>
+										<td>
+											<div class="birth_date">
+												<select name="date">
+													<option value="unselected">请选择</option>
+													<option value ="1日">1日</option>
+													<option value ="2日">2日</option>
+													<option value ="3日">3日</option>
+													<option value ="4日">4日</option>
+												</select>
+												<span>日</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_right">所在地区</td>
+										<td colspan="3">
+											<input type="text" class="address" placeholder="广东" />
+										</td>
+									</tr>
+									<tr>
+										<td class="td_right">婚姻状况</td>
+										<td colspan="3">
+											<input type="radio" name="maritalStatus" id="a" />
+											<label for="a"><span class="maritalStatus">未婚</span></label>
+											<input type="radio" name="maritalStatus" id="b" />
+											<label for="b"><span class="maritalStatus">离婚</span></label>
+											<input type="radio" name="maritalStatus" id="c" />
+											<label for="c"><span>丧偶</span></label>
+										</td>
+									</tr>
+									<tr class="tr_register">
+										<td colspan="4">
+											<input type="button" class="register" name="register" value="免费注册" />
+										</td>
+									</tr>
+									<tr class="tr_vip">
+										<td colspan="4"><a href="#" target="_self">我是会员，立即登录</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 插入宣传广告-背景图 -->
+		<div class="publicist">
+			<div class="publicist_bgd"></div>
+		</div>
+		<!-- 优质用户展示 -->
+		<div class="user_display"> <!--与浏览器百分百宽--> <!--  -->
+			<div class="user_display_box"> <!-- 1200px居中盒子 -->
+				<div class="user_display_head"><!-- 标题行 -->
+					<h2>2.2亿优质会员，就在眼前</h2>  <!-- 加背景图片在left -->
+				</div>
+				<div class="user_display_content"> <!-- 会员展示详情部分 -->
+					<div class="up_img1">
+						
+					</div>
+					<div class="up_img2-1">
+						
+					</div>
+					<div class="up_img2-2">
+						
+					</div>
+					<div class="up_img3-1">
+						
+					</div>
+					<div class="up_img3-2">
+						
+					</div>
+					<div class="up_img4">
+						
+					</div>
+					<div class="up_img5-1">
+						
+					</div>
+					<div class="up_img5-2">
+						
+					</div>
+					<!-- 九宫格--用户类型选择 -->
+					<div class="up_typeBox1-1">
+						
+					</div>
+					<div class="up_typeBox1-2">
+						
+					</div>
+					<div class="up_typeBox1-3">
+						
+					</div>
+					<div class="up_typeBox2-1">
+						
+					</div>
+					<div class="up_typeBox2-2">
+						
+					</div>
+					<div class="up_typeBox2-3">
+						
+					</div>
+					<div class="up_typeBox3-1">
+						
+					</div>
+					<div class="up_typeBox3-2">
+						
+					</div>
+					<div class="up_typeBox3-3">
+						
+					</div>
+				<!-- 第二排用户展示图片列表 -->
+					<div class="down_img1-1">
+						
+					</div>
+					<div class="down_img1-2">
+						
+					</div>
+					<div class="down_img2">
+						
+					</div>
+					<div class="down_img3-1">
+						
+					</div>
+					<div class="down_img3-2">
+						
+					</div>
+					<div class="down_img4-1">
+						
+					</div>
+					<div class="down_img4-2">
+						
+					</div>
+					<div class="down_img5">
+						
+					</div>
+					<div class="down_img6-1">
+						
+					</div>
+					<div class="down_img6-2">
+						
+					</div>
+				</div>
+				<div class="user_display_nav">
+					
+				</div>
+			</div>
+		</div>
+		<!-- 成功的用户展示 -->
+		<div class="succeed_display">
+			<div class="succeed_display_box">
+				<div class="succeed_display_head">
+					<h2>就在你身边，他们相爱啦！</h2>
+				</div>
+				<div class="succeed_display_content">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

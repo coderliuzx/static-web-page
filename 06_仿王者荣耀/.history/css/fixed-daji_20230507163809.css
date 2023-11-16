@@ -1,0 +1,26 @@
+.fixed-dj {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+  transform: translate(0, -50%);
+  width: 254px;
+  height: 494px;
+  background: url("../img/right_nav_bg.png") no-repeat left top;
+}
+
+.fixed-dj .dj-head {
+  position: relative;
+  top: 15px;
+  left: 24px;
+  width: 165px;
+  height: 145px;
+  padding: 38px 0 0 14px;
+  background: url("../img/right_dj.png") no-repeat top center;
+}
+
+.fixed-dj .dj-head p {
+  font-weight: bold;
+  line-height: 18px;
+  color: #62401b;
+}

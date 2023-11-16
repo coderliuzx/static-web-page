@@ -1,0 +1,18 @@
+body {
+  padding-top: 200px;
+}
+
+.area {
+  height: 1000px;
+  background-color: skyblue;
+}
+
+.albumList {
+  display: flex;
+  margin-right: -12px;
+  background-color: orange;
+}
+
+.albumList .item {
+  margin-right: 12px;
+}

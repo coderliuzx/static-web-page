@@ -1,0 +1,17 @@
+.content .area {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  /* 临时高度 */
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+  background: url("../images/main_bg.png") 0 0;
+}
+
+.content .area-left {
+  width: 729px;
+}
+
+.content .area-right {
+  width: 250px;
+}

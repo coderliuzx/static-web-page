@@ -1,0 +1,8 @@
+.banner {
+  height: 285px;
+  background: url("../images/banner_bg_02.jpeg") no-repeat center/6000px;
+}
+
+.banner .area {
+  display: flex;
+}

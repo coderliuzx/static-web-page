@@ -1,0 +1,199 @@
+body {
+  padding-top: 100px;
+}
+
+.mainItem {
+  display: flex;
+  justify-content: space-between;
+  height: 549px;
+}
+
+/* 左边区域------------------------------------------------------- */
+.mainItem .area-left {
+  width: 872px;
+  height: 549px;
+}
+
+/* 标题微调 */
+.mainItem .area-left .item_header {
+  margin-bottom: 16px;
+}
+
+.mainItem .area-left .item_header .title {
+  background-position: 0 -106px;
+}
+
+/* 主标题列表微调 */
+.mainItem .area-left .itemShow .main_titleList {
+  margin-bottom: 5px;
+}
+
+/* 子标题列表微调 */
+.mainItem .area-left .itemShow .itemArea .sub_titleList {
+  padding: 0 0 7px 7px;
+}
+
+/* 视频列表 */
+.mainItem .area-left .itemShow .itemArea .videoList {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 380px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item {
+  width: 209px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a {
+  display: block;
+  height: 175px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .album {
+  position: relative;
+  height: 125px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .album img {
+  width: 100%;
+  height: 125px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .album .albumInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  padding-left: 24px;
+  line-height: 22px;
+  color: #fff;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6) url("../img/main_sprite.png") no-repeat -248px -59px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .album .mask {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity .4s ease-in-out;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a:hover .album .mask {
+  opacity: 1;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .album .mask .icon-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background: url("../img/main_sprite.png") no-repeat -192px -64px;
+}
+
+.mainItem .area-left .itemShow .itemArea .videoList .item a .desc {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右边区域------------------------------------------------------- */
+.mainItem .area-right {
+  width: 295px;
+  height: 528px;
+}
+
+/* 标题微调 */
+.mainItem .area-right .item_header {
+  margin-bottom: 16px;
+}
+
+.mainItem .area-right .item_header h3 {
+  background-position: 0 -144px;
+}
+
+/* 主标题列表微调 */
+.mainItem .area-right .main_titleList {
+  margin-bottom: 19px;
+}
+
+/* item内容展示区 */
+.mainItem .area-right .item-content {}
+
+.mainItem .area-right .item-content .top-album {
+  height: 224px;
+  margin-bottom: 10px;
+}
+
+.mainItem .area-right .item-content .top-album img {
+  height: 156px;
+}
+
+.mainItem .area-right .item-content .top-album .desc {
+  height: 68px;
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+}
+
+.mainItem .area-right .item-content .top-album .desc .new {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.mainItem .area-right .item-content .top-album .desc .time {
+  color: #999999;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mainItem .area-right .item-content .hero-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainItem .area-right .item-content .hero-list .item a {
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 173px;
+}
+
+.mainItem .area-right .item-content .hero-list .item a img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainItem .area-right .item-content .hero-list .item a .mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .8);
+  color: #f3c258;
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: 68px;
+  letter-spacing: 4px;
+}

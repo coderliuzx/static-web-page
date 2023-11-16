@@ -1,0 +1,19 @@
+.wrapper_01 {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear_fix::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}

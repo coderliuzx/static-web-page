@@ -1,0 +1,32 @@
+.footer {
+  height: 325px;
+  border-top: 1px solid #d3d3d3;
+  background-color: #f2f2f2;
+}
+
+.footer .service {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer .service .unit {
+  width: 100px;
+  height: 71px;
+  background-color: orange;
+}
+
+.footer .service .unit .logo-unit {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: url(../images/foot_enter_new2.png) 0 9999px no-repeat;
+}
+
+.footer .service .unit .logo-unit.one {
+  background-position: -339px -10px;
+}
+
+.footer .service .unit .logo-unit.one:hover {
+  background-position: -5px -115px;
+}

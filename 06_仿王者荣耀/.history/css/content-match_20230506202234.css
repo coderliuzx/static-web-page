@@ -1,0 +1,150 @@
+/* 赛事中心 */
+.match {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 左区域-----赛事中心 */
+.match .area-left {
+  width: 872px;
+}
+
+.match .area-left .item_header {
+  margin-bottom: 16px;
+}
+
+.match .area-left .item_header h3 {
+  background-position: 0 -184px;
+}
+
+.match .area-left .container-left .main_titleList {
+  margin-bottom: 19px;
+}
+
+.match .area-left .container-left .show .notice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match .area-left .container-left .show .notice .album {
+  width: 211px;
+  height: 260px;
+  margin-right: 19px;
+}
+
+.match .area-left .container-left .show .notice .album img {
+  width: 100%;
+  height: 100%;
+}
+
+.match .area-left .container-left .show .notice .desc {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title {
+  margin-bottom: 10px;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title a {
+  display: block;
+  height: 32px;
+  margin-right: 66px;
+  line-height: 32px;
+  font-size: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title a:hover {
+  text-decoration: underline;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title span {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  color: #666;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item {
+  position: relative;
+  display: flex;
+  padding-bottom: 9px;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item i {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item a {
+  flex-grow: 1;
+  height: 23px;
+  margin-right: 66px;
+  line-height: 23px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item a:hover {
+  text-decoration: underline;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item em {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+  color: #b8b9c5;
+}
+
+.match .area-left .container-left .show .video_list {
+  margin-top: 18px;
+}
+
+
+
+/* 右区域 ----KPL赛程*/
+.match .area-right {
+  width: 295px;
+  overflow: hidden;
+}
+
+.match .area-right .item_header {
+  margin-bottom: 16px;
+}
+
+.match .area-right .item_header h3 {
+  background-position: -157px -106px;
+}
+
+.match .area-right .item_header .icon_ticket {
+  position: absolute;
+  right: 65px;
+  top: 2px;
+  box-sizing: border-box;
+  width: 70px;
+  height: 22px;
+  padding-left: 32px;
+  border: 1px solid #f3c258;
+  color: #323235;
+  line-height: 20px;
+  background: url("../img/main_sprite.png") no-repeat -243px -85px;
+}
+
+.match .area-right .schedule {
+  width: 100%;
+  text-align: center;
+}
+
+.match .area-right .schedule thead {
+  height: 32px;
+  background: #f5f5f5;
+  color: #999;
+  line-height: 32px;
+}

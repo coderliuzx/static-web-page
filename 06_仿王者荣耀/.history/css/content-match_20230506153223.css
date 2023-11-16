@@ -1,0 +1,19 @@
+body {
+  padding-top: 200px;
+}
+
+/* 赛事中心 */
+.match {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 赛事中心-----左区域 */
+.match .area-left {
+  width: 872px;
+}
+
+/* 赛事中心------右区域 ----KPL赛程*/
+.match .area-right {
+  width: 295px;
+}

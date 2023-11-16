@@ -1,0 +1,107 @@
+body {
+  padding-top: 200px;
+}
+
+/* 赛事中心 */
+.match {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 左区域-----赛事中心 */
+.match .area-left {
+  width: 872px;
+}
+
+.match .area-left .item_header {
+  margin-bottom: 16px;
+}
+
+.match .area-left .item_header h3 {
+  background-position: 0 -184px;
+}
+
+.match .area-left .container-left .main_titleList {
+  margin-bottom: 19px;
+}
+
+.match .area-left .container-left .show .notice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match .area-left .container-left .show .notice .album {
+  width: 211px;
+  height: 260px;
+  margin-right: 19px;
+}
+
+.match .area-left .container-left .show .notice .album img {
+  width: 100%;
+  height: 100%;
+}
+
+.match .area-left .container-left .show .notice .desc {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title {
+  margin-bottom: 10px;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title a {
+  display: block;
+  height: 32px;
+  margin-right: 66px;
+  line-height: 32px;
+  font-size: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title a:hover {
+  text-decoration: underline;
+}
+
+.match .area-left .container-left .show .notice .desc .match-title span {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  color: #666;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item {
+  position: relative;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item i {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item a {
+  flex-grow: 1;
+  margin-right: 66px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item a:hover {
+  text-decoration: underline;
+}
+
+.match .area-left .container-left .show .notice .desc .match-info .item em {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 右区域 ----KPL赛程*/
+.match .area-right {
+  width: 295px;
+}

@@ -1,0 +1,44 @@
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+p,
+input {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+
+i,
+em {
+  font-style: normal;
+  font-size: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  vertical-align: top;
+}

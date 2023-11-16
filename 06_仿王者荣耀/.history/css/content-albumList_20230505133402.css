@@ -1,0 +1,13 @@
+body {
+  padding-top: 200px;
+}
+
+.area {
+  height: 1000px;
+  background-color: skyblue;
+}
+
+.albumList {
+  background-color: orange;
+
+}

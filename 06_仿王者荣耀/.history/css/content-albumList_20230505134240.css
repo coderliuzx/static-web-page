@@ -1,0 +1,35 @@
+body {
+  padding-top: 200px;
+}
+
+.area {
+  height: 1000px;
+  background-color: skyblue;
+}
+
+.albumList {
+  display: flex;
+  margin-right: -12px;
+  background-color: orange;
+}
+
+.albumList .item {
+  flex: 1;
+  margin-right: 12px;
+}
+
+.albumList .item a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+.albumList .item a img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.albumList .item a:hover img {
+  transform: scale(1.2);
+}

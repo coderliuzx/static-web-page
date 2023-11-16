@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仿网易云官网</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main-topbar.css">
+  <link rel="stylesheet" href="./css/main-banner.css">
+  <link rel="stylesheet" href="./css/main_content.css">
+  <link rel="stylesheet" href="./css/main-footer.css">
+  <style>
+    @keyframes topBackAni {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .top-back {
+      position: fixed;
+      top: 50%;
+      right: 50px;
+      width: 49px;
+      height: 44px;
+      background: url("./images/sprite-top-back.png") no-repeat -265px -47px;
+      text-indent: -9999px;
+    }
+
+    .top-back:hover {
+      background-position: -325px -47px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 顶部 -->
+  <div class="topbar">
+    <!-- 顶部主导航部分 -->
+    <div class="main-nav">
+      <div class="wrapper_01 clear_fix">
+        <div class="left">
+          <h1 class="title">
+            <a class="sprite_topbar_01" href="#">网易云音乐</a>
+          </h1>
+          <ul class="nav-list">
+            <li class="item active">
+              <a href="#">发现音乐</a>
+            </li>
+            <li class="item"><a href="#">我的音乐</a></li>
+            <li class="item"><a href="#">关注</a></li>
+            <li class="item"><a href="#">商域</a></li>
+            <li class="item"><a href="#">音乐人</a></li>
+            <li class="item">
+              <a href="#">下载客户端</a>
+              <i class="hot_icon hot"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="login">
+            <a href="#">登录</a>
+          </div>
+          <div class="author">
+            创作者中心
+          </div>
+          <div class="search sprite_topbar_01">
+            <input type="text" name="search" placeholder="音乐/视频/电台/用户">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 顶部子导航部分 -->
+    <div class="sub-nav">
+      <div class="wrapper_01 clear_fix">
+        <ul class="nav-list">
+          <li class="item"><a href="#"><em>推荐</em></a></li>
+          <li class="item active"><a href="#"><em>排行榜</em></a></li>
+          <li class="item"><a href="#"><em>歌单</em></a></li>
+          <li class="item"><a href="#"><em>主播电台</em></a></li>
+          <li class="item"><a href="#"><em>歌手</em></a></li>
+          <li class="item"><a href="#"><em>新碟上架</em></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 轮播图 -->
+  <div class="banner">
+    <div class="area wrapper_02">
+      <div class="area-left">
+        <ul class="img-list">
+          <li class="item">
+            <a href="#"><img src="./images/banner_02.jpeg"></a>
+          </li>
+          <li class="item">
+            <a href="#"><img src="./images/banner_01.jpg"></a>
+          </li>
+          <li class="item">
+            <a href="#"><img src="./images/banner_02.jpeg"></a>
+          </li>
+        </ul>
+        <ul class="dot-list">
+          <li class="item"><a class="active" href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+          <li class="item"><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="area-right">
+        <a class="download" href="#">下载</a>
+        <p class="desc">PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+      </div>
+      <a href="#" class="btn btn-left"></a>
+      <a href="#" class="btn btn-right"></a>
+    </div>
+  </div>
+  <!-- 内容展示区域 -->
+  <div class="content">
+    <div class="area wrapper_02">
+      <!-- 内容左侧区域 -->
+      <div class="area-left">
+        <div class="recommend-section">
+          <div class="header_type_02">
+            <div class="category">
+              <h2><a class="title" href="#">热门推荐</a></h2>
+              <ul class="list">
+                <li class="keyword"><a href="#">华语</a></li>
+                <li class="line">|</li>
+                <li class="keyword"><a href="#">流行</a></li>
+                <li class="line">|</li>
+                <li class="keyword"><a href="#">摇滚</a></li>
+                <li class="line">|</li>
+                <li class="keyword"><a href="#">民谣</a></li>
+                <li class="line">|</li>
+                <li class="keyword"><a href="#">电子</a></li>
+              </ul>
+            </div>
+            <div class="more">
+              <a href="#">更多</a>
+            </div>
+          </div>
+          <div class="recommend-list">
+            <ul class="list">
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+              <li class="item">
+                <div class="top-area">
+                  <img src="./images/recommend_01.jpg">
+                  <div class="radio-info">
+                    <span class="icon-headset"></span>
+                    <span class="num">2607万</span>
+                    <a class="play" href="#"></a>
+                  </div>
+                </div>
+                <div class="bottom-area">
+                  <a class="desc">「看书学习」在安静的大黄蜂号的发挥地方吧东方今典到你发的位置看热闹的世界</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="disc-section">
+          <div class="header_type_02">
+            <div class="category">
+              <h2><a class="title" href="#">新碟上架</a></h2>
+            </div>
+            <div class="more">
+              <a href="#">更多</a>
+            </div>
+          </div>
+          <div class="disc-list">
+            <div class="inner">
+              <div class="show">
+                <ul class="list">
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_01.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_02.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_01.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_02.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_01.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_01.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_02.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_01.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_02.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="album">
+                      <img src="./images/disc_01.jpg">
+                      <a class="mask-album" href="#"></a>
+                      <a href="#" class="play"></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">
+                        <a href="#">IDOL</a>
+                      </p>
+                      <p class="author">
+                        <a href="#">李大奔BENZO</a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="btn-left"></a>
+              <a href="#" class="btn-right"></a>
+            </div>
+          </div>
+        </div>
+        <div class="rank-section">
+          <div class="header_type_02">
+            <div class="category">
+              <h2><a class="title" href="#">榜单</a></h2>
+            </div>
+            <div class="more">
+              <a href="#">更多</a>
+            </div>
+          </div>
+          <div class="show-rank">
+            <dl class="rank-list up">
+              <dt class="title">
+                <div class="title-left">
+                  <img src="./images/rank_up.jpeg">
+                  <a href="#"></a>
+                </div>
+                <div class="title-right">
+                  <a class="title-name u_l" href="#">飙升榜</a>
+                  <div class="btn">
+                    <a href="#" class="bg-btn play">播放</a>
+                    <a href="#" class="bg-btn favor">收藏</a>
+                  </div>
+                </div>
+              </dt>
+              <dd class="list">
+                <ol>
+                  <li class="item">
+                    <span class="num first">1</span>
+                    <a class="sing ellipsis_01" href="#">明天 (feat. 袁娅维TIA RAY)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num second">2</span>
+                    <a class="sing ellipsis_01" href="#">孤雏</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num third">3</span>
+                    <a class="sing ellipsis_01" href="#">倒数说爱你</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">4</span>
+                    <a class="sing ellipsis_01" href="#">美好的事可不可以发生在我身上 (Live版)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">5</span>
+                    <a class="sing ellipsis_01" href="#">但</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">6</span>
+                    <a class="sing ellipsis_01" href="#">Suygu</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">7</span>
+                    <a class="sing ellipsis_01" href="#">备注</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">8</span>
+                    <a class="sing ellipsis_01" href="#">Baby, Don't Cry (人鱼的眼泪)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">9</span>
+                    <a class="sing ellipsis_01" href="#">迷失的季节</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">10</span>
+                    <a class="sing ellipsis_01" href="#">说唱</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+            <dl class="rank-list new">
+              <dt class="title">
+                <div class="title-left">
+                  <img src="./images/rank_new.jpeg">
+                  <a href="#"></a>
+                </div>
+                <div class="title-right">
+                  <a class="title-name u_l" href="#">新歌榜</a>
+                  <div class="btn">
+                    <a href="#" class="bg-btn play">播放</a>
+                    <a href="#" class="bg-btn favor">收藏</a>
+                  </div>
+                </div>
+              </dt>
+              <dd class="list">
+                <ol>
+                  <li class="item">
+                    <span class="num first">1</span>
+                    <a class="sing ellipsis_01" href="#">明天 (feat. 袁娅维TIA RAY)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num second">2</span>
+                    <a class="sing ellipsis_01" href="#">孤雏</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num third">3</span>
+                    <a class="sing ellipsis_01" href="#">倒数说爱你</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">4</span>
+                    <a class="sing ellipsis_01" href="#">美好的事可不可以发生在我身上 (Live版)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">5</span>
+                    <a class="sing ellipsis_01" href="#">但</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">6</span>
+                    <a class="sing ellipsis_01" href="#">Suygu</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">7</span>
+                    <a class="sing ellipsis_01" href="#">备注</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">8</span>
+                    <a class="sing ellipsis_01" href="#">Baby, Don't Cry (人鱼的眼泪)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">9</span>
+                    <a class="sing ellipsis_01" href="#">迷失的季节</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">10</span>
+                    <a class="sing ellipsis_01" href="#">说唱</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+            <dl class="rank-list origin">
+              <dt class="title">
+                <div class="title-left">
+                  <img src="./images/rank_origin.jpeg">
+                  <a href="#"></a>
+                </div>
+                <div class="title-right">
+                  <a class="title-name u_l" href="#">原创榜</a>
+                  <div class="btn">
+                    <a href="#" class="bg-btn play">播放</a>
+                    <a href="#" class="bg-btn favor">收藏</a>
+                  </div>
+                </div>
+              </dt>
+              <dd class="list">
+                <ol>
+                  <li class="item">
+                    <span class="num first">1</span>
+                    <a class="sing ellipsis_01" href="#">明天 (feat. 袁娅维TIA RAY)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num second">2</span>
+                    <a class="sing ellipsis_01" href="#">孤雏</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num third">3</span>
+                    <a class="sing ellipsis_01" href="#">倒数说爱你</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">4</span>
+                    <a class="sing ellipsis_01" href="#">美好的事可不可以发生在我身上 (Live版)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">5</span>
+                    <a class="sing ellipsis_01" href="#">但</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num">6</span>
+                    <a class="sing ellipsis_01" href="#">Suygu</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">7</span>
+                    <a class="sing ellipsis_01" href="#">备注</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">8</span>
+                    <a class="sing ellipsis_01" href="#">Baby, Don't Cry (人鱼的眼泪)</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">9</span>
+                    <a class="sing ellipsis_01" href="#">迷失的季节</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <span class="num ">10</span>
+                    <a class="sing ellipsis_01" href="#">说唱</a>
+                    <div class="btn-list">
+                      <a href="#" class="btn-a play"></a>
+                      <a href="#" class="btn-a add"></a>
+                      <a href="#" class="btn-a favor"></a>
+                    </div>
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- 内容右侧区域 -->
+      <div class="area-right">
+        <div class="login">
+          <p class="desc">
+            登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机
+          </p>
+          <a href="#">
+            用户登录
+          </a>
+        </div>
+        <!-- 入驻歌手 -->
+        <div class="settle-singer">
+          <div class="header_type_01">
+            <h3 class="title">入驻歌手</h3>
+            <a href="#" class="more">查看全部&nbsp;&gt;</a>
+          </div>
+          <ul class="singer-list">
+            <li>
+              <a href="#" class="item">
+                <div class="album">
+                  <img src="./images/singer_01.jpg">
+                </div>
+                <div class="info">
+                  <div class="author">张惠妹aMEI</div>
+                  <p class="desc">台湾歌手张惠妹</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="album">
+                  <img src="./images/singer_02.jpg">
+                </div>
+                <div class="info">
+                  <div class="author">吴莫愁Momo</div>
+                  <p class="desc">《中国好声音》选手吴莫愁</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="album">
+                  <img src="./images/singer_03.jpg">
+                </div>
+                <div class="info">
+                  <div class="author">张惠妹aMEI</div>
+                  <p class="desc">台湾歌手张惠妹</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="album">
+                  <img src="./images/singer_02.jpg">
+                </div>
+                <div class="info">
+                  <div class="author">吴莫愁Momo</div>
+                  <p class="desc">《中国好声音》选手吴莫愁</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="apply">
+            <i>申请成为网易音乐人</i>
+          </a>
+        </div>
+        <!-- 热门主播 -->
+        <div class="hot-author">
+          <div class="header_type_01">
+            <h3 class="title">热门主播</h3>
+          </div>
+          <ul class="author-list">
+            <li class="item">
+              <a class="author-img" href="#">
+                <img src="./images/author_01.jpg">
+              </a>
+              <div class="info">
+                <div class="author-name">
+                  <a href="#">陈立</a>
+                </div>
+                <p class="desc">
+                  心理学家、美食家陈立教授
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <a class="author-img" href="#">
+                <img src="./images/author_02.jpg">
+              </a>
+              <div class="info">
+                <div class="author-name">
+                  <a href="#">刘维-Julius</a>
+                </div>
+                <p class="desc">
+                  歌手、播客节目《维维道来》主理人
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <a class="author-img" href="#">
+                <img src="./images/author_01.jpg">
+              </a>
+              <div class="info">
+                <div class="author-name">
+                  <a href="#">陈立</a>
+                </div>
+                <p class="desc">
+                  心理学家、美食家陈立教授
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <a class="author-img" href="#">
+                <img src="./images/author_02.jpg">
+              </a>
+              <div class="info">
+                <div class="author-name">
+                  <a href="#">刘维-Julius</a>
+                </div>
+                <p class="desc">
+                  歌手、播客节目《维维道来》主理人
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <a class="author-img" href="#">
+                <img src="./images/author_01.jpg">
+              </a>
+              <div class="info">
+                <div class="author-name">
+                  <a href="#">陈立</a>
+                </div>
+                <p class="desc">
+                  心理学家、美食家陈立教授
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <a class="author-img" href="#">
+                <img src="./images/author_02.jpg">
+              </a>
+              <div class="info">
+                <div class="author-name">
+                  <a href="#">刘维-Julius</a>
+                </div>
+                <p class="desc">
+                  歌手、播客节目《维维道来》主理人
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <div class="wrapper_02">
+      <ul class="service">
+        <li class="unit">
+          <a class="logo-unit one" href="#"></a>
+          <p class="desc">音乐开放平台</p>
+        </li>
+        <li class="unit">
+          <a class="logo-unit one" href="#"></a>
+          <p class="desc">音乐开放平台</p>
+        </li>
+        <li class="unit">
+          <a class="logo-unit one" href="#"></a>
+          <p class="desc">音乐开放平台</p>
+        </li>
+        <li class="unit">
+          <a class="logo-unit one" href="#"></a>
+          <p class="desc">音乐开放平台</p>
+        </li>
+        <li class="unit">
+          <a class="logo-unit one" href="#"></a>
+          <p class="desc">音乐开放平台</p>
+        </li>
+        <li class="unit">
+          <a class="logo-unit one" href="#"></a>
+          <p class="desc">音乐开放平台</p>
+        </li>
+        <li class="unit">
+          <a class="logo-unit one" href="#"></a>
+          <p class="desc">音乐开放平台</p>
+        </li>
+      </ul>
+      <div class="copy">
+        <p><a href="#">服务条款| 隐私政策| 儿童隐私政策| 版权投诉| 投资者关系| 广告合作 | 联系我们</a></p>
+        <p><a href="#">廉正举报 不良信息举报邮箱: 51jubao@service.netease.com 客服热线：95163298</a></p>
+        <p><a href="#">互联网宗教信息服务许可证：浙（2022）0000120 增值电信业务经营许可证：浙B2-20150198 粤B2-20090191-18 工业和信息化部备案管理系统网站</a></p>
+        <p><a href="#">网易公司版权所有©1997-2023杭州乐读科技有限公司运营：浙网文[2021] 1186-054号 浙公网安备 33010902002564号</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- 返回顶部 -->
+  <a href="#" class="top-back">返回顶部</a>
+
+  <!-- 脚本 -->
+  <script>
+    let topBackBtn = document.querySelector('.top-back')
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 600) {
+
+      }
+    })
+  </script>
+</body>
+
+</html>

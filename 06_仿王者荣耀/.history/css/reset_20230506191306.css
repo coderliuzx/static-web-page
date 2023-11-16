@@ -1,0 +1,42 @@
+body,
+h1,
+h2,
+h3,
+div,
+ul,
+ol,
+li,
+p,
+a {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body样式继承 */
+body {
+  color: #333;
+  font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+em,
+i {
+  font-style: normal;
+  font-weight: normal;
+}

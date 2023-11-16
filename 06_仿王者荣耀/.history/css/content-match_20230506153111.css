@@ -1,0 +1,18 @@
+body {
+  padding-top: 200px;
+}
+
+.match {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match .area-left {
+  width: 872px;
+  background-color: orange;
+}
+
+.match .area-right {
+  width: 295px;
+  background-color: purple;
+}

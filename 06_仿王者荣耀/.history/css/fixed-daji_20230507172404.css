@@ -1,0 +1,69 @@
+.fixed-dj {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 5;
+  transform: translate(0, -50%);
+  width: 254px;
+  height: 494px;
+  background: url("../img/right_nav_bg.png") no-repeat left top;
+}
+
+.fixed-dj .dj-head {
+  position: relative;
+  top: 15px;
+  left: 24px;
+  width: 165px;
+  height: 145px;
+  padding: 38px 0 0 14px;
+  background: url("../img/right_dj.png") no-repeat top center;
+}
+
+.fixed-dj .dj-head p {
+  font-weight: bold;
+  line-height: 18px;
+  color: #62401b;
+}
+
+.fixed-dj .list {
+  position: relative;
+  top: 14px;
+  left: 86px;
+  width: 117px;
+}
+
+.fixed-dj .list .item-top a {
+  display: block;
+  height: 134px;
+  padding-top: 5px;
+  background: url("..//img/right_all22.png") no-repeat -243px 0;
+}
+
+.fixed-dj .list .item-top a img {
+  width: 107px;
+  height: 107px;
+  margin: 0 auto;
+
+}
+
+.fixed-dj .list .item {
+  height: 38px;
+  margin-top: 1px;
+  background: url("../img/right_all22.png") no-repeat 0 9999px;
+}
+
+.fixed-dj .list .item.wzyd {
+  background-position: -243px -134px;
+}
+
+.fixed-dj .list .item.wb {
+  background-position: -122px -120px;
+}
+
+.fixed-dj .list .item.wzyd {
+  background-position: -243px -134px;
+}
+
+.fixed-dj .list .item.wzyd {
+  background-position: -243px -134px;
+}

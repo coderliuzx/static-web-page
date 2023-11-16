@@ -1,0 +1,166 @@
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.main .banner-big {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 1300px;
+  background: url("../img/datu.jpg") no-repeat top center;
+  background-size: 100% auto;
+}
+
+/* 主导航-----------------------------------开始------------------------- */
+.main .nav-main {
+  position: relative;
+  font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.main .nav-main .area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 84px;
+  padding-left: 230px;
+}
+
+.main .nav-main .area .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 200px;
+  height: 54px;
+  background: url(..//img/logo.png) no-repeat 0 0;
+}
+
+.main .nav-main .area .logo a {
+  display: block;
+  height: 100%;
+  text-indent: -9999px;
+}
+
+.main .nav-main .area-left {
+  display: flex;
+}
+
+.main .nav-main .area-left .item {
+  width: 115px;
+  height: 84px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.main .nav-main .area-left .item:hover,
+.main .nav-main .area-left .item.active {
+  background: url("../img/main_sprite.png") no-repeat 0 0;
+}
+
+.main .nav-main .area-left .item:hover a,
+.main .nav-main .area-left .item.active a,
+.main .nav-main .area-left .item:hover a em,
+.main .nav-main .area-left .item.active a em {
+  color: #e4b653;
+}
+
+.main .nav-main .area-left .item a {
+  display: block;
+  height: 100%;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.main .nav-main .area-left .item em {
+  display: block;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #858792;
+}
+
+.main .nav-main .area-right {
+  align-self: center;
+  display: flex;
+  width: 182px;
+}
+
+.main .nav-main .area-right .personal {
+  flex-shrink: 0;
+  width: 44px;
+  margin-right: 7px;
+}
+
+.main .nav-main .area-right .personal img {
+  height: 100%;
+  border: 1px solid #d9ad50;
+  border-radius: 23px;
+}
+
+.main .nav-main .area-right .login {
+  flex-shrink: 0;
+  width: 130px;
+}
+
+.main .nav-main .area-right .login a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.main .nav-main .area-right .login em {
+  display: block;
+  color: #858792;
+  font-size: 14px;
+}
+
+/* 下拉菜单 */
+.main .nav-main .dropMenu {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, .7);
+  transition: height .5s ease;
+}
+
+.main .nav-main:hover .dropMenu {
+  height: 285px;
+}
+
+.main .nav-main .dropMenu .inner {
+  display: flex;
+  width: 940px;
+  height: 100%;
+  padding: 15px 0px 30px 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .nav-main .dropMenu .inner .list {
+  width: 120px;
+}
+
+.main .nav-main .dropMenu .inner .list .item a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #c9c9dd;
+}
+
+.main .nav-main .dropMenu .inner .list .item a:hover {
+  color: #d9ad50;
+}
+
+
+/* 内容展示区域-----------------------------------开始------------------------- */
+.main>.content {
+  padding-top: 345px;
+}

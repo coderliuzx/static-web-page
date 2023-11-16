@@ -1,0 +1,9 @@
+.fixed-dj {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 254px;
+  height: 494px;
+  background: orange;
+}

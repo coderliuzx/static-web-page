@@ -1,0 +1,42 @@
+body {
+  padding-top: 200px;
+}
+
+/* 赛事中心 */
+.match {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 左区域-----赛事中心 */
+.match .area-left {
+  width: 872px;
+}
+
+.match .area-left .item_header {
+  margin-bottom: 16px;
+}
+
+.match .area-left .item_header h3 {
+  background-position: 0 -184px;
+}
+
+.match .area-left .container-left .main_titleList {
+  margin-bottom: 19px;
+}
+
+.match .area-left .container-left .show .notice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match .area-left .container-left .show .notice .album {
+  display: block;
+  width: 211px;
+  height: 260px;
+}
+
+/* 右区域 ----KPL赛程*/
+.match .area-right {
+  width: 295px;
+}

@@ -1,0 +1,162 @@
+body {
+  padding-top: 460px;
+  width: 100%;
+  height: 1300px;
+  background: url("../img/datu.jpg") no-repeat top center/ 100% auto;
+}
+
+.news {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 342px;
+}
+
+.news>div {
+  flex-shrink: 0;
+}
+
+
+/* banner图展示列表 */
+.news .banner {
+  width: 605px;
+  background: #000;
+}
+
+.news .banner .bannerList {
+  display: flex;
+  height: 298px;
+  margin-right: 1px;
+  overflow: hidden;
+}
+
+.news .banner .bannerList .item {
+  flex-shrink: 0;
+}
+
+.news .banner .bannerList .item a {
+  display: block;
+  height: 298px;
+}
+
+.news .banner .bannerList .item img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+.news .banner .descList {
+  display: flex;
+  height: 44px;
+  margin-right: 1px;
+}
+
+.news .banner .descList .item {
+  flex-shrink: 0;
+}
+
+.news .banner .descList .item a {
+  display: block;
+  width: 121px;
+  height: 100%;
+  text-align: center;
+  line-height: 44px;
+  color: #b1b2be;
+}
+
+.news .banner .descList .item a:hover,
+.news .banner .descList .item a.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #f3c258;
+}
+
+
+
+
+/* 新闻展示列表 */
+.news .newsList {
+  position: relative;
+  width: 359px;
+  padding: 0 17px;
+  background: rgba(0, 0, 0, .6);
+}
+
+.news .newsList .newsTitle {
+  display: flex;
+  width: 100%;
+  height: 49px;
+  border-bottom: 1px solid #000;
+}
+
+.news .newsList .newsTitle .item {
+  flex-shrink: 0;
+}
+
+.news .newsList .newsTitle .item a {
+  display: block;
+  width: 52px;
+  height: 100%;
+  line-height: 45px;
+  text-align: center;
+  color: #b8b9c5
+}
+
+.news .newsList .newsTitle .item a:hover,
+.news .newsList .newsTitle .item a.active {
+  border-bottom: 3px solid #f3c258;
+  color: #f3c258;
+}
+
+.news .newsList .moreNews {
+  position: absolute;
+  top: 0;
+  right: 17px;
+  display: block;
+  width: 52px;
+  height: 48px;
+  line-height: 40px;
+  text-align: center;
+  color: #b8b9c5;
+}
+
+.news .newsList .moreNews:hover {
+  color: #f3c258;
+}
+
+
+
+.news .newsList .newsInfo {
+  height: 298px;
+}
+
+.news .newsList .newsInfo .item-top {
+  height: 36px;
+  padding: 0 15px;
+  margin: 18px 0 11px;
+  background: #414046;
+}
+
+.news .newsList .newsInfo .item-top a {
+  display: block;
+  width: 230px;
+  line-height: 36px;
+  color: #f3c258;
+  font-size: 18px;
+}
+
+/* 其他展示 */
+.news .other {
+  width: 236px;
+  background-color: green;
+}
+
+.news .tips {
+  position: absolute;
+  top: 0;
+  right: -58px;
+  width: 53px;
+  background-color: purple;
+}

@@ -1,0 +1,111 @@
+/* 顶部主导航栏 */
+.topbar .main-nav {
+  height: 70px;
+  border: 1px solid #000;
+  background-color: #242424;
+  color: #ccc;
+}
+
+/* 顶部主导航栏 --- 左侧*/
+.topbar .main-nav .left {
+  display: flex;
+}
+
+.topbar .main-nav .left .title {
+  width: 177px;
+  height: 69px;
+  text-indent: -999px;
+}
+
+.topbar .main-nav .left .nav-list {
+  display: flex;
+}
+
+.topbar .main-nav .left .nav-list .item {
+  position: relative;
+}
+
+.topbar .main-nav .left .nav-list .item a {
+  display: block;
+  padding: 0 19px;
+  line-height: 69px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.topbar .main-nav .left .nav-list .item.active a {
+  background-color: #000;
+  color: #fff;
+}
+
+.topbar .main-nav .left .nav-list .item .cor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 7px;
+  margin: 0 auto;
+  background-position: -216px -140px;
+}
+
+.topbar .main-nav .left .nav-list .item .hot {
+  position: absolute;
+  top: 21px;
+  left: 100px;
+  width: 28px;
+  height: 19px;
+  background-position: -192px 0;
+}
+
+/* 顶部主导航栏 --- 右侧 */
+.topbar .main-nav .right {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  height: 69px;
+}
+
+.topbar .main-nav .right .login {
+  margin-left: 12px;
+}
+
+.topbar .main-nav .right .login a {
+  display: inline-block;
+  line-height: 32px;
+  color: #787878;
+  font-size: 12px;
+}
+
+.topbar .main-nav .right .author {
+  width: 90px;
+  height: 32px;
+  border: 1px solid #4F4F4F;
+  border-radius: 16px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+.topbar .main-nav .right .search {
+  position: relative;
+  width: 158px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #fff;
+  background-position: 2px -99px;
+}
+
+.topbar .main-nav .right .search input {
+  position: absolute;
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 115px;
+  height: 16px;
+}
+
+.topbar .main-nav .right .search input::placeholder {
+  font-size: 12px;
+}

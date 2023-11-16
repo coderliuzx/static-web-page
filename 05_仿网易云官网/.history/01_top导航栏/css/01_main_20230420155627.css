@@ -1,0 +1,19 @@
+/* 顶部主导航栏 */
+.topbar .main-nav {
+  height: 70px;
+  border: 1px solid #000;
+  background-color: #242424;
+  color: #ccc;
+}
+
+/* 顶部主导航栏 --- 左侧*/
+.topbar .main-nav .left {
+  display: flex;
+}
+
+.topbar .main-nav .left .title {
+  width: 177px;
+  height: 69px;
+  /* padding-right: 20px; */
+  background: url("../images/topbar_sprite.png") 0 0;
+}

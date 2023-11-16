@@ -1,0 +1,34 @@
+.news {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 342px;
+  background: orange;
+}
+
+.news>div {
+  flex-shrink: 0;
+}
+
+.news .banner {
+  width: 605px;
+  background-color: purple;
+}
+
+.news .newsList {
+  width: 359px;
+  background-color: yellow;
+}
+
+.news .other {
+  width: 236px;
+  background-color: green;
+}
+
+.news .tips {
+  position: absolute;
+  top: 0;
+  right: -58px;
+  width: 53px;
+  background-color: purple;
+}
